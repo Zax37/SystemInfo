@@ -1,4 +1,4 @@
-#include "gpuinfodelegate.h"
+#include "../include/gpuinfodelegate.h"
 
 const std::string GPUInfoDelegate::GPU_INFO_QUERY_STRING = "wmic path Win32_VideoController get /format: list";
 const std::string GPUInfoDelegate::GPU_INSTANCE_QUERY_STRING = "CurrentBitsPerPixel=";

@@ -1,4 +1,4 @@
-#include "osinfo.h"
+#include "../include/osinfo.h"
 
 const std::string OSInfo::ARCHITECTURE_IDENTIFIER_STRING = "OSArchitecture=";
 const std::string OSInfo::CAPTION_INDENTIFIER_STRING = "Caption=";
@@ -304,7 +304,7 @@ std::string OSInfo::freePhysicalMemory() const
 	SystemCommand systemCommand{ FREE_PHYSICAL_MEMORY_QUERY_STRING };
 	systemCommand.execute();
 	if (!systemCommand.hasError()) {
-		std::vector<std::string> raw{ systemCommand.outputAsVector() };
+		std::vector<std::string> raw = systemCommand.outputAsVector();
 		if (raw.empty()) {
 			freePhysicalMemory = "Unknown";
 		}

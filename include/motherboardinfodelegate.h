@@ -4,7 +4,6 @@
 #include <vector>
 #include <string>
 #include "motherboardinfo.h"
-#include "systemcommand.h"
 
 #ifndef _WIN32
     #error This library heavily uses wmic.exe, which is only available on Win32 platforms

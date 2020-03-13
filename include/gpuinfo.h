@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-
+#include <sstream>
 #include "systemcommand.h"
 
 #ifndef _WIN32
@@ -13,7 +13,7 @@
 class GPUInfo
 {
 public:
-	GPUInfo::GPUInfo(const std::vector<std::string> &rawData, int cpuNumber);
+	GPUInfo(const std::vector<std::string> &rawData, int cpuNumber);
     std::string name() const;
     std::string manufacturer() const;
     std::string caption() const;

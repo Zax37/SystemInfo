@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "systemcommand.h"
+#include <sstream>
 
 #ifndef _WIN32
     #error This library heavily uses wmic.exe, which is only available on Win32 platforms

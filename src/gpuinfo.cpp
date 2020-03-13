@@ -1,4 +1,4 @@
-#include "gpuinfo.h"
+#include "../include/gpuinfo.h"
 
 const std::string GPUInfo::NVIDIA_IDENTIFIER_STRING = "NVIDIA";
 const std::string GPUInfo::INTEL_IDENTIFIER_STRING = "INTEL";

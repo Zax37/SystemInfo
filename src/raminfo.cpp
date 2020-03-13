@@ -1,4 +1,4 @@
-#include "raminfo.h"
+#include "../include/raminfo.h"
 
 const std::string RAMInfo::NAME_IDENTIFIER_STRING = "DeviceLocator=";
 const std::string RAMInfo::MANUFACTURER_IDENTIFIER_STRING = "Manufacturer=";

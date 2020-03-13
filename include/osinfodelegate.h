@@ -3,7 +3,6 @@
 
 #include <string>
 #include <vector>
-#include "systemcommand.h"
 #include "osinfo.h"
 
 #ifndef _WIN32

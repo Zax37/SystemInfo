@@ -1,4 +1,4 @@
-#include "osinfodelegate.h"
+#include "../include/osinfodelegate.h"
 
 const std::string OSInfoDelegate::OS_INFO_QUERY_STRING = "wmic os get /format:list";
 const std::string OSInfoDelegate::OS_INSTANCE_QUERY_STRING = "PortableOperatingSystem=";

@@ -3,7 +3,6 @@
 
 #include <string>
 #include <vector>
-#include "systemcommand.h"
 #include "gpuinfo.h"
 
 #ifndef _WIN32

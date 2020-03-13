@@ -1,4 +1,4 @@
-#include "cpuinfo.h"
+#include "../include/cpuinfo.h"
 
 const std::string CPUInfo::TEMPERATURE_QUERY_STRING = "wmic /namespace:\\\\root\\wmi PATH MSAcpi_ThermalZoneTemperature get CurrentTemperature";
 const std::string CPUInfo::TEMPERATURE_ERROR_IDENTIFIER_STRING = "ERROR:";
@@ -26,6 +26,9 @@ CPUInfo::CPUInfo(const std::vector<std::string> &rawData, int cpuNumber) :
         if ((iter->find(NAME_IDENTIFIER_STRING) != std::string::npos) && (iter->find(NAME_IDENTIFIER_STRING) == 0)) {
             size_t foundPosition = iter->find(NAME_IDENTIFIER_STRING);
             this->_name = iter->substr(foundPosition+NAME_IDENTIFIER_STRING.length());
+            while (this->_name[this->_name.length() - 1] == ' ') {
+                this->_name.pop_back(); // rtrim
+            }
         }
 
         //Manufacturer
