@@ -2,9 +2,7 @@
 #include "../../tiny-process-library/process.hpp"
 
 void SystemCommand::execute() {
-	std::wstring cmd;
-	cmd.assign(command.begin(), command.end());
-	TinyProcessLib::Process process(cmd, L"", [this](const char* bytes, size_t n) {
+	TinyProcessLib::Process process(command, "", [this](const char* bytes, size_t n) {
 		std::string returnString = std::string(bytes, n);
 		size_t foundPosition;
 		while (foundPosition = returnString.find("\r\r\n"), foundPosition != std::string::npos) {
