@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/gpuinfodelegate.h"
 
 const std::string GPUInfoDelegate::GPU_INFO_QUERY_STRING = "wmic path Win32_VideoController get /format: list";

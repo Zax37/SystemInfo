@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/osinfodelegate.h"
 
 const std::string OSInfoDelegate::OS_INFO_QUERY_STRING = "wmic os get /format:list";

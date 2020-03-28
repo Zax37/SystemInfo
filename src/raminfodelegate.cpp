@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/raminfodelegate.h"
 
 const std::string RAMInfoDelegate::RAM_INFO_QUERY_STRING = "wmic memorychip get /format: list";

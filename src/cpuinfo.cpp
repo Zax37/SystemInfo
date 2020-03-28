@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/cpuinfo.h"
 
 const std::string CPUInfo::TEMPERATURE_QUERY_STRING = "wmic /namespace:\\\\root\\wmi PATH MSAcpi_ThermalZoneTemperature get CurrentTemperature";

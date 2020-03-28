@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/cpuinfodelegate.h"
 
 const std::string CPUInfoDelegate::CPU_INFO_QUERY_STRING = "wmic cpu get /format: list";

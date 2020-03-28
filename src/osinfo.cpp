@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/osinfo.h"
 
 const std::string OSInfo::ARCHITECTURE_IDENTIFIER_STRING = "OSArchitecture=";

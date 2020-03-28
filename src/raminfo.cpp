@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/raminfo.h"
 
 const std::string RAMInfo::NAME_IDENTIFIER_STRING = "DeviceLocator=";

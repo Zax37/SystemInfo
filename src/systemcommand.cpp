@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "../include/systemcommand.h"
 #include "../../tiny-process-library/process.hpp"
 
